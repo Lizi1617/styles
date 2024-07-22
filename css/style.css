@@ -1,0 +1,164 @@
+/* 1 */
+.button_container {
+    width: 600px;
+    height: 400px;
+    background-color: blueviolet;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 300px;
+    height: 90px;
+    border-radius: 20px;
+    border: none;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 10px;
+    text-shadow: 3px 3px 3px black;
+    background-color: blueviolet;
+    box-shadow: 5px 5px 5px black, inset 5px 5px 5px white
+}
+
+button:active {
+    box-shadow: inset 5px 5px 5px black, inset -5px -5px 5px white;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* 2 */
+.card {
+    width: 500px;
+    margin: 100px auto;
+    border-radius: 30px;
+    padding: 30px;
+    transition: 1s linear;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    color: blue;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px green, 0 0 30px green, 0 0 60px green;
+}
+
+.card:hover img {
+    border-radius: 30px 30px 0 0;
+}
+
+/* 3 */
+h3 {
+    font-size: 80px;
+    color: red;
+    text-align: center;
+    margin-top: 200px;
+    letter-spacing: 20px;
+    animation: opacity .5s infinite;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* 4 */
+.spiner_container {
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.spiner {
+    margin: 100px auto;
+    width: 100%;
+    height: 100%;
+    border-top: 30px solid red;
+    border-bottom: 30px solid green;
+    border-left: 30px solid green;
+    border-right: 30px solid yellow;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate 2s linear infinite;
+}
+
+h5 {
+    font-size: 60px;
+    color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translate(-50% -50%);
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spiner:hover {
+    animation-play-state: paused;
+}
+
+/* 5 */
+.container_header{
+    margin: 100px;
+    border: 5px solid black;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li{
+    padding: 20px;
+}
+
+a{
+    font-size: 30px;
+    color: cadetblue;
+    transition: 1s linear;
+}
+
+a:hover{
+    color: crimson;
+    text-shadow: 5px 5px 5px crimson;
+}
+
+/* 6 */
+.loading_container{
+    width: 70%;
+    height: 80px;
+    border: 5px solid black;
+    margin: 100px auto;
+}
+
+.loading_fill{
+    width: 1%;
+    height: 100%;
+    background-color:chocolate;
+    animation: fill 2s linear forwards;
+}
+
+@keyframes fill{
+    100%{
+        width: 100%;
+    }
+}
